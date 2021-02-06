@@ -16,12 +16,12 @@ public class Solution_D3_3499_퍼펙트셔플 {
 			}
 			System.out.print("#" + t);
 			for (int i = 0; i < N / 2; i++) {
-				if (N - N / 2 + i < N) {
+				if (N - N / 2 + i < N) { // 반 나눠서 순서대로 보여주자
 					System.out.print(" " + shuffle[i]);
 					System.out.print(" " + shuffle[N - N / 2 + i]);
 				}
 			}
-			if(N%2==1) {
+			if(N%2==1) { // 하나 남으니까
 				System.out.print(" " + shuffle[N/2]);
 			}
 			System.out.println();
