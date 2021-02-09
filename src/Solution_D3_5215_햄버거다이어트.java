@@ -5,6 +5,7 @@ public class Solution_D3_5215_햄버거다이어트 {
 	static int T, N, L, calsum, tastesum, result;
 	static int[] taste;
 	static int[] cal;
+	static boolean[] isSelected;
 
 	public static void main(String[] args) {
 
@@ -15,6 +16,7 @@ public class Solution_D3_5215_햄버거다이어트 {
 			L = scann.nextInt();
 			taste = new int[N];
 			cal = new int[N];
+			isSelected = new boolean[N];
 			for (int i = 0; i < N; i++) {
 				taste[i] = scann.nextInt();
 				cal[i] = scann.nextInt();
@@ -38,7 +40,9 @@ public class Solution_D3_5215_햄버거다이어트 {
 		for (int i = start; i < N; i++) {
 			calsum += cal[i];
 			tastesum += taste[i];
+			isSelected[i]=true;
 			sumSet(cnt + 1, i + 1);
+			isSelected[i]=false;
 		}
 	}
 
