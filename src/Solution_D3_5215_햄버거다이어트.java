@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class Solution_D3_5215_햄버거다이어트 {
+	// 미완
 
 	static int T, N, L, calsum, tastesum, result;
 	static int[] taste;
