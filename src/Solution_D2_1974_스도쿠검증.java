@@ -1,4 +1,3 @@
-package annaswea;
 
 import java.util.Scanner;
 
