@@ -12,7 +12,7 @@ public class Solution_D3_9229_한빈이와SpotMart {
 		for (int t = 1; t <= T; t++) {
 			N = scann.nextInt();
 			M = scann.nextInt();
-			snack = new int[N];
+			snack = new int[N]; 
 			for (int n = 0; n < N; n++) {
 				snack[n] = scann.nextInt();
 			}
