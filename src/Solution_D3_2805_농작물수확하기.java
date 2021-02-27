@@ -29,18 +29,14 @@ public class Solution_D3_2805_농작물수확하기 {
 		for (int i = 0; i < N/2; i++) {
 			for (int j = d; j < N-d; j++) {
 				tot+=map[i][j];
-				System.out.print(map[i][j]+" ");
 			}
 			d--;
-			System.out.println();
 		}
 		for (int i = N/2; i < N; i++) {
 			for (int j = d; j < N-d; j++) {
 				tot+=map[i][j];
-				System.out.print(map[i][j]+" ");
 			}
 			d++;
-			System.out.println();
 		}
 		return tot;
 	}
